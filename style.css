@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: black;
+} 
+
+h1 {
+    color:whitesmoke;
+}
+
+
+p {
+    color: skyblue;
+    font-size: 1.5rem;
+}
