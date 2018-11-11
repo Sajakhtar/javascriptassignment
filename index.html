@@ -8,7 +8,7 @@
     <body>
         <script type="text/JavaScript" src="./src.js"></script>
         <h1>Astrolabs Javascript Practice Assignment</h1>
-        <h2>Data:</h2>
+        <h2>Data</h2>
         <pre>
             <code>
         var house = {
@@ -39,19 +39,95 @@
         }            
             </code>
         </pre>
-        <h2>Questions:</h2>
+        <h2>Questions</h2>
         <p id="output">Please check the JS Console for the output to the following questions</p>
         <ol>
-            <li>Find total number of areas in the house</li>
-            <li>Add a dining table to the living room</li>
-            <li>Add a stove to the kitchen</li>
-            <li>Remove the washing machine from bedroomOne</li>
-            <li>Find the total number of beds in all rooms</li>
-            <li>Change the color of the car to blue</li>
-            <li>Add a another car to the garage with a honk function</li>
-            <li>Make the new car honk</li>
-            <li>Change the 'broken chair' in the kitchen to 'new chair'</li>
-            <li>If the house has a garden, console.log the name of the flower</li>
+            <li>Find total number of areas in the house:</li>
+            <pre>
+                <code>
+                    let houseAreas = Object.keys(house.areas[0]).length;
+                    console.log(houseAreas);
+                </code>
+            </pre>
+            <li>Add a dining table to the living room:</li>
+            <pre>
+                <code>
+                    house.areas[0].livingRoom.items.push("dining table");
+                    console.log(house.areas[0].livingRoom.items);
+                </code>
+            </pre>
+            <li>Add a stove to the kitchen:</li>
+            <pre>
+                <code>
+                    house.areas[0].kitchen.items.push("stove");
+                    console.log(house.areas[0].kitchen.items);
+                </code>
+            </pre>
+            <li>Remove the washing machine from bedroomOne:</li>
+            <pre>
+                <code>
+                    house.areas[0].bedroomOne.items.pop();
+                    console.log(house.areas[0].bedroomOne.items);
+                </code>
+            </pre>
+            <li>Find the total number of beds in all rooms:</li>
+            <pre>
+                <code>
+                    let rooms = Object.keys(house.areas[0]);
+                    let beds = 0;
+
+                    for (let i = 0; i < rooms.length; i++) {
+                        let roomItems = house.areas[0][rooms[i]]["items"];
+                        for (let j = 0; j < roomItems.length; j++) {
+                            if(roomItems[j] == "bed") {
+                                beds++
+                            }
+                        }     
+                    };
+
+                    console.log(beds);
+
+                </code>
+            </pre>
+            <li>Change the color of the car to blue:</li>
+            <pre>
+                <code>
+                    house.garage.car.color = "blue";
+                    console.log(house.garage.car.color);
+                </code>
+            </pre>
+            <li>Add a another car to the garage with a honk function:</li>
+            <pre>
+                <code>
+                    house.garage.car2 = {
+                        color: 'green',
+                        wheels: 4,
+                        honk: ()=>{alert("Beep")}
+                    }
+                    console.log(house.garage);
+                </code>
+            </pre>
+            <li>Make the new car honk:</li>
+            <pre>
+                <code>
+                    house.garage.car2.honk();
+                </code>
+            </pre>
+            <li>Change the 'broken chair' in the kitchen to 'new chair':</li>
+            <pre>
+                <code>
+                    house.areas[0].kitchen.items.splice(1,1,"new chair");
+                    console.log(house.areas[0].kitchen.items);
+                </code>
+            </pre>
+            <li>If the house has a garden, console.log the name of the flower:</li>
+            <pre>
+                <code>
+                    if (house.garden[0]) {
+                        console.log(house.garden[1]);
+                    };
+                </code>
+            </pre>
         </ol>
     </body>
 </html>

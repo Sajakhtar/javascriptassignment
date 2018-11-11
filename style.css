@@ -21,21 +21,24 @@ p {
 }
 
 ol {
-    text-align: center;
+    text-align: left;
 
 }
 
 li {
     color: whitesmoke;
     font-size: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0;
     text-align: left;
     list-style-position: inside;
 }
 
 code {
-    color: whitesmoke;
+    color: lightsteelblue;
     font-size: 1rem;
     text-align: left;
+}
 
+pre {
+    padding-bottom: 1rem;
 }
