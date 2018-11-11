@@ -84,7 +84,7 @@ var house = {
         color: 'green',
         wheels: 4,
         honk: ()=>{alert("Beep")}
-    }
+    };
     console.log(house.garage);
 
 
