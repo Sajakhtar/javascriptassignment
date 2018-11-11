@@ -6,8 +6,52 @@
         <title>Astrolabs Javascript Practice Assignment</title>
     </head>
     <body>
-        <h1>Astrolabs Javascript Practice Assignment</h1>
-        <p id="output">Please checkout the Console for output</p>
         <script type="text/JavaScript" src="./src.js"></script>
+        <h1>Astrolabs Javascript Practice Assignment</h1>
+        <h2>Data:</h2>
+        <pre>
+            <code>
+        var house = {
+            areas: [{
+                livingRoom: {
+                    items: ['tv','sofa']
+                },
+                bedroomOne: {
+                    items: ['bed','washing machine'],
+                    windows: 3
+                },
+                bedroomTwo:{
+                    items: ['bed','bed','desk'],
+                    windows: 4
+                },
+                kitchen:{
+                    items: ['fridge','broken chair']
+                }
+            }],
+            garden: [true, 'Red Rose'],
+            garage: {
+                car: {
+                    color: 'red',
+                    wheels: 4,
+                    honk: ()=>{alert("Beep")}
+                }
+            }
+        }            
+            </code>
+        </pre>
+        <h2>Questions:</h2>
+        <p id="output">Please checkout the JS Console for the output the following questions</p>
+        <ol>
+            <li>Find total number of areas in the house</li>
+            <li>Add a dining table to the living room</li>
+            <li>Add a stove to the kitchen</li>
+            <li>Remove the washing machine from bedroomOne</li>
+            <li>Find the total number of beds in all rooms</li>
+            <li>Change the color of the car to blue</li>
+            <li>Add a another car to the garage with a honk function</li>
+            <li>Make the new car honk</li>
+            <li>Change the 'broken chair' in the kitchen to 'new chair'</li>
+            <li>If the house has a garden, console.log the name of the flower</li>
+        </ol>
     </body>
 </html>

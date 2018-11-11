@@ -1,15 +1,41 @@
 body {
-    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: black;
 } 
 
 h1 {
     color:whitesmoke;
+    text-align: center;
+    padding-bottom: 2rem;
 }
 
+h2 {
+    color:turquoise;
+    text-align: left;
+}
 
 p {
-    color: skyblue;
+    color: lightcoral;
     font-size: 1.5rem;
+    text-align: left;
+}
+
+ol {
+    text-align: center;
+
+}
+
+li {
+    color: whitesmoke;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    list-style-position: inside;
+}
+
+code {
+    color: whitesmoke;
+    font-size: 1rem;
+    text-align: left;
+
 }
